@@ -1,5 +1,5 @@
   const images = [
-    'gallery_img/nationals.JPG',
+    'gallery_img/nationals.jpeg',
     'gallery_img/worlds.jpg',
     'gallery_img/academics.jpeg',
     'gallery_img/quizbee.jpeg',
@@ -53,3 +53,4 @@
 
 
   startLoop();
+
