@@ -92,7 +92,6 @@
   </style>
 </head>
 <body>
-  <!-- The image as a button -->
   <h3>CLICK TO START</h3>
   <a href="HomePage.html" class="card-button">
     <img src="gallery_img/callmeifyougetlostid.png" alt="Travel License">
