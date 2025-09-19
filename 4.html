@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="navbar.css">
+<link rel="icon" href="useful_img/d2fd543da078a4a92d398fb42026d159.png">
+<link rel="stylesheet" href="4.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<title>GALLERY</title>
+<script src="navbar.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo"> 
+      <img src="useful_img/call-me-if-you-get-lost-logos-v0-y77hk8jri5sd1.png" alt="Logo">
+    </a>
+    <div class="menu-toggle" onclick="toggleMenu(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="HomePage.html">Home</a></li>
+      <li><a href="3.html">Achievements</a></li>
+      <li><a href="jenson.html">CV</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="4.html">Pictures</a></li>
+      <li><a href="socials.html">Socials</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="Contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
+  <div class="overlay" onclick="toggleMenu(document.querySelector('.menu-toggle'))"></div>
+  <div class="wrapper">
+    <!-- filter Items -->
+    <nav>
+      <div class="items">
+        <span class="item active" data-name="all">All</span>
+        <span class="item" data-name="rand">Random</span>
+        <span class="item" data-name="memo">Memories</span>
+        <span class="item" data-name="self">Selfies</span>
+        <span class="item" data-name="camera">Photography</span>
+        <span class="item" data-name="headphone">Memes</span>
+      </div>
+    </nav>
+
+    <!-- filter Images -->
+    <div class="gallery">
+      <div class="image" data-name="rand"><span><img src="gallery_img/academics.jpeg" alt=""></span></div>
+<div class="image" data-name="memo"><span><img src="gallery_img/achievements.JPG" alt=""></span></div>
+<div class="image" data-name="self"><span><img src="gallery_img/callmeifyougetlostid.png" alt=""></span></div>
+<div class="image" data-name="camera"><span><img src="gallery_img/epic wolf.jpg" alt=""></span></div>
+<div class="image" data-name="memo"><span><img src="gallery_img/golf.jpg" alt=""></span></div>
+<div class="image" data-name="rand"><span><img src="gallery_img/gr11.jpg" alt=""></span></div>
+<div class="image" data-name="self"><span><img src="gallery_img/gr12.jpg" alt=""></span></div>
+<div class="image" data-name="camera"><span><img src="gallery_img/nationals.jpeg" alt=""></span></div>
+<div class="image" data-name="rand"><span><img src="gallery_img/nationals.JPG" alt=""></span></div>
+<div class="image" data-name="memo"><span><img src="gallery_img/quizbee.jpeg" alt=""></span></div>
+<div class="image" data-name="self"><span><img src="gallery_img/robluke.jpeg" alt=""></span></div>
+<div class="image" data-name="camera"><span><img src="gallery_img/starss.png" alt=""></span></div>
+<div class="image" data-name="memo"><span><img src="gallery_img/work.jpg" alt=""></span></div>
+<div class="image" data-name="rand"><span><img src="gallery_img/worlds.jpeg" alt=""></span></div>
+<div class="image" data-name="self"><span><img src="gallery_img/worlds.jpg" alt=""></span></div>
+
+    </div>
+  </div>
+  <div class="overlay" onclick="toggleMenu(document.querySelector('.menu-toggle'))"></div>
+
+  <!-- fullscreen img preview box -->
+  <div class="preview-box">
+    <button class="close-preview" aria-label="Close">&times;</button>
+    <div class="details">
+      <span class="title">Image Category: <p></p></span>
+    </div>
+    <div class="image-box"><img src="" alt=""></div>
+  </div>
+  <div class="shadow"></div>
+<script src="4.js"></script>
+</body>
+</html>

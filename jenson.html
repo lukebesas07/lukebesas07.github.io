@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="jenson.css">
+  <link rel="stylesheet" href="navbar.css">
+  <title>Fake ahh CV</title>
+  <link rel="icon" href="useful_img/d2fd543da078a4a92d398fb42026d159.png">
+  <script src="navbar.js"></script>
+</head> 
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo"> 
+      <img src="useful_img/call-me-if-you-get-lost-logos-v0-y77hk8jri5sd1.png" alt="Logo">
+    </a>
+    <div class="menu-toggle" onclick="toggleMenu(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="HomePage.html">Home</a></li>
+      <li><a href="3.html">Achievements</a></li>
+      <li><a href="jenson.html">CV</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="4.html">Pictures</a></li>
+      <li><a href="socials.html">Socials</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="Contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
+  <div class="overlay" onclick="toggleMenu(document.querySelector('.menu-toggle'))"></div>
+  <div class="cv-container">
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+      <a href="Besas_CV.pdf">
+        <img src="useful_img/ekulsalonga.jpg" alt="Profile Picture" class="profile-pic"></a>
+      <div class="section-title">About Me</div>
+      <p class="about-me">
+        Passionate professional with experience in graphic design and web development. 
+        Skilled in creating modern, responsive designs with strong attention to detail (press picture to download a pdf file of my Fake CV).
+      </p>
+
+      <div class="section-title">Skills</div>
+      <ul class="skills">
+        <li>Graphic Design
+          <div class="skill-bar"><div class="skill-fill" style="--skill-level: 90%;"></div></div>
+        </li>
+        <li>Web Development
+          <div class="skill-bar"><div class="skill-fill" style="--skill-level: 85%;"></div></div>
+        </li>
+        <li>UI/UX
+          <div class="skill-bar"><div class="skill-fill" style="--skill-level: 80%;"></div></div>
+        </li>
+        <li>Photography
+          <div class="skill-bar"><div class="skill-fill" style="--skill-level: 70%;"></div></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+      <h1 class="name">Luke Andrei M. Besas</h1>
+      <h4>First Year Computer Science Student</h4>
+      <div class="contact">
+        2441 Rubi St. San Andres Bukid Manila <br>
+        Phone: +(0) 1 2345 555 <br>
+        Email: besaslukelol@gmail.com
+      </div>
+
+      <div class="content-section">
+        <h2>Experience</h2>
+        <div class="job">
+          <h3>Robotics Driver <span>(2024 - Now)</span></h3>
+          <ul>
+            <li>Competed in Vex Robotics nationally and internationally</li>
+            <li>Philippine Represenatives for the Vex Robotics World Champions 2025</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Makinarya Club President <span>SY 2024-2025</span></h3>
+          <p></p>
+        </div>
+        <div class="job">
+          <h3>Data Engineer<span>(2020 - Now)</span></h3>
+          <ul>
+            <li>Worked at Rappler.com (2020-2024)</li>
+            <li>Currently Working at JPMorgan and Chase Co. (2024-Now)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content-section">
+        <h2>Education</h2>
+        <div class="school">
+          <h3>Pamantasan ng Lungsod ng Maynila <span>(2025-Now))</span></h3>
+        <Ul>
+          <li>Graduated witha a Bachelor of Science in Computer Science Degree</li>
+          <li>Summa Cum Laude</li>
+        </Ul>
+        </div>
+        <div class="school">
+          <h3>Makati Science High School<span>(2019-2025)</span></h3>
+          <ul>
+            <li>Consistent Honor Student</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

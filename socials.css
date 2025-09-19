@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  margin-top: 5%;
+  font-family: 'Poppins', sans-serif;
+  background-image: url("gallery_img/golf.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.social-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.social-box {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform .25s ease, box-shadow .25s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-box i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.social-box p {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.social-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+/* Brand colors */
+.instagram i { color: #E1306C; }
+.facebook i { color: #1877F2; }
+.twitter i { color: #1DA1F2; }
+.telegram i { color: #0088cc; }
+.tiktok i { color: #000000; }
+
+/* Info section below the boxes */
+.info-section {
+  max-width: 800px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.info-section h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .social-box { width: 120px; height: 120px; }
+  .social-box i { font-size: 34px; }
+}

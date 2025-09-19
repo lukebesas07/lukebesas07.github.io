@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="navbar.css">
+<link rel="icon" href="useful_img/d2fd543da078a4a92d398fb42026d159.png">
+<link rel="stylesheet" href="3.css">
+<script src="navbar.js"></script>
+<!-- Optional icon font -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo"> 
+      <img src="useful_img/call-me-if-you-get-lost-logos-v0-y77hk8jri5sd1.png" alt="Logo">
+    </a>
+    <div class="menu-toggle" onclick="toggleMenu(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="HomePage.html">Home</a></li>
+      <li><a href="3.html">Achievements</a></li>
+      <li><a href="jenson.html">CV</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="4.html">Pictures</a></li>
+      <li><a href="socials.html">Socials</a></li>
+      <li><a href="hobbies.html">Hobbies</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="Contacts.html">Contacts</a></li>
+    </ul>
+  </nav>
+  <div class="overlay" onclick="toggleMenu(document.querySelector('.menu-toggle'))"></div>
+<div class="container">
+  <h2>Achievements</h2>
+  <p>Never back down Never What? </p>
+
+  <!-- Background image and feature cards wrapper -->
+  <div class="image-card-wrapper">
+    <!-- Background image -->
+    <div class="background-image"></div>
+    <!-- Feature cards aligned at bottom of image -->
+    <div class="features">
+      <div class="feature-box" data-index="1">
+        <div class="icon"><i class="fas fa-crown"></i></div>
+        <div class="number">2</div>
+        <div>National Championships</div>
+      </div>
+      <div class="feature-box" data-index="0">
+        <div class="icon"><i class="fas fa-globe"></i></div>
+        <div class="number">1</div>
+        <div>World Championship</div>
+      </div>
+      <div class="feature-box" data-index="3">
+        <div class="icon"><i class="fas fa-medal"></i></div>
+        <div class="number">5</div>
+        <div>Academic Excellence Awards</div>
+      </div>
+      <div class="feature-box" data-index="2">
+        <div class="icon"><i class="fas fa-atom"></i></div>
+        <div class="number">5</div>
+        <div>5-Time Science Quiz Bee Champion</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature detail boxes -->
+  <div class="features-details">
+    <div class="feature-detail-box">
+      <h4>National Championship</h4>
+      <ul>
+      <li>Philippine Vex Robotics Nationals 2025 Tournament Champions and 4th Place Skills Challenge</li>
+      <li>Philippine Vex Robotics 2025: Tournament 1 Semi-Finalists and 3rd Place Skills Challenge</li>
+      <li>Philippine Vex Robotics Nationals 2024: 3rd Place Skills Challenge</li>
+      </ul>
+    </div>
+    <div class="feature-detail-box">
+      <h4>World Championships</h4>
+      <ul>
+      <li>Achieved 23rd place (out of 80 teams) in the world championships.</li>
+      </ul>
+    </div>
+    <div class="feature-detail-box">
+      <h4>Academic Excellence Awards</h4>
+      <ul>
+      <li>With Honors (grade 12)</li>
+      <li>With Honors (grade 11)</li>
+      <li>Academic Excellence Award in Science (Grade 12)</li>
+      <li>Outstanding Research Exhibitor in Robotics and intelligence Machines (grade 12)</li>
+      <li>Academic Excellence Award in Science (Grade 12)</li>
+      <li>Best in Math (Grade 2)</li>
+      </ul>
+    </div>
+    <div class="feature-detail-box">
+      <h4>Science Quiz Bee Champion</h4>
+      <p>school based quiz bees</p>
+      <ul>
+      <li>Science Bowl 2024</li>
+      <li>Science Bowl 2025 (Team Challenge)</li>
+      <li>Pinoy Sci-Bee 2025</li>
+      <li>Sigwa’t Siyensya 2025</li>
+      <li>Random ahh classroom quiz bee in 2025</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script src="3.js"></script>
+</body>
+</html>

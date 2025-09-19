@@ -1,0 +1,136 @@
+body {
+  margin-top: 8%;
+  font-family: Arial, sans-serif;
+  background: url("gallery_img/golf.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.full-screen-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 0px;
+  gap: 40px;
+  justify-content: center;
+}
+
+.half-box {
+  flex: 1 1 45%;
+  max-width: 600px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.content-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.content-box h2 {
+  font-size: 1.6em;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #111;
+}
+
+.content-box h5 {
+  margin: 5px 0 15px 0;
+  font-weight: normal;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.content-box img {
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.intro-box {
+  width: 700px;
+  max-width: 90%;
+  text-align: center;
+  margin: 40px auto 60px auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #111;
+}
+
+.section-desc {
+  font-size: 1.05em;
+  color: #444;
+}
+
+@media (max-width: 1024px) {
+  .full-screen-container {
+    margin-top: 100px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .full-screen-container {
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 25px;
+  }
+  .half-box {
+    max-width: 100%;
+  }
+  .content-box {
+    padding: 20px;
+  }
+  .section-title {
+    font-size: 1.7em;
+  }
+  .section-desc {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-top: 18%;
+  }
+  .intro-box {
+    width: 95%;
+    padding: 15px;
+    margin: 20px auto 40px auto;
+  }
+  .content-box {
+    padding: 15px;
+  }
+  .content-box img {
+    max-height: 220px;
+  }
+  .section-title {
+    font-size: 1.4em;
+  }
+  .section-desc {
+    font-size: 0.9em;
+  }
+}
