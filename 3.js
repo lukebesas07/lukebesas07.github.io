@@ -1,5 +1,5 @@
   const images = [
-    'gallery_img/nationals.jpg',
+    'gallery_img/nationals.JPG',
     'gallery_img/worlds.jpg',
     'gallery_img/academics.jpeg',
     'gallery_img/quizbee.jpeg',
@@ -50,5 +50,6 @@
       resumeLoop();
     });
   });
+
 
   startLoop();
