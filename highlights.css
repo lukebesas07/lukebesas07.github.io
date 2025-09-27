@@ -17,17 +17,7 @@ body {
   color: #111;
 }
 
-.intro-box {
-  width: 900px;
-  max-width: 90%;
-  text-align: center;
-  margin: -10px auto 30px auto;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 10px 100px;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
-}
-
+.intro-box,
 .intro-boxs {
   width: 900px;
   max-width: 90%;
@@ -39,6 +29,10 @@ body {
   box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
 
+.intro-box {
+  padding: 10px 100px;
+}
+
 .section-desc {
   margin-top: 10px;
   font-size: 1.05em;
@@ -48,6 +42,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 .video-section {
   display: flex;
   justify-content: center;
@@ -103,22 +98,36 @@ body {
   max-width: 1200px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
+  overflow: hidden; 
 }
 
 .video-gallery {
   display: flex;
-  justify-content: center;
   gap: 20px;
-  flex-wrap: nowrap; 
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 0;
 }
 
 .video-item {
-  flex: 1 1 45%;
+  flex: 0 0 48%;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  scroll-snap-align: start;
+}
+
+.video-item h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #111;
 }
 
 .video-item video {
-  width: 600px;
-  border-radius: 12px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .video-desc {
@@ -126,32 +135,74 @@ body {
   font-size: 14px;
   color: #333;
   text-align: justify;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.gallery-title {
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  color: #111;
-  font-weight: 600;
+@media (max-width: 992px) {
+  .video-box iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
 }
 
-
-/* Responsive for smaller screens */
 @media (max-width: 768px) {
+  body {
+    margin-top: 20%;
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+  .intro-box,
+  .intro-boxs {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 1.5em;
+  }
+
+  .section-desc {
+    font-size: 0.95em;
+  }
+
   .video-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .video-box iframe {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
+  .video-section {
+    margin-left: -10%;
+    margin-top: -10%;
   }
 
   .video-text {
-    margin-top: 20px;
+    margin-top: 15px;
+    text-align: justify;
+  }
+
+  .video-box iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  } 
+
+  .video-gallery {
+    gap: 15px;
+    padding: 0 5px;
+  }
+
+  .video-gallery-box {
+    margin-left: -2%;
+  }
+
+  .video-item {
+    flex: 0 0 95%;
+  }
+
+  .video-item video {
+    aspect-ratio: 16/9;
   }
 }
